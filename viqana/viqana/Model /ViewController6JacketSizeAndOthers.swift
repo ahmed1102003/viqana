@@ -1,26 +1,18 @@
 //
-//  ViewController5.swift
+//  ViewController6JacketSizeAndOthers.swift
 //  viqana
 //
-//  Created by Ahmad Younis on 9/29/17.
+//  Created by Ahmad Younis on 10/6/17.
 //  Copyright © 2017 Ahmad Younis. All rights reserved.
 //
 
 import UIKit
 
-class ViewController5: UIViewController {
+class ViewController6JacketSizeAndOthers: UIViewController {
 
-    @IBOutlet weak var Add: UIButton!
-    @IBOutlet weak var text1: UILabel!
-    @IBOutlet weak var button4: UIButton!
-    @IBOutlet weak var button3: UIButton!
-    @IBOutlet weak var button2: UIButton!
-    @IBOutlet weak var button1: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        
         // Do any additional setup after loading the view.
     }
 
@@ -30,11 +22,6 @@ class ViewController5: UIViewController {
     }
     
 
-    
-    
-    
-    
-    
     /*
     // MARK: - Navigation
 

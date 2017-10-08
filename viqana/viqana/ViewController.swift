@@ -80,7 +80,7 @@ class ViewController: UIViewController{
     }
     
     @objc func button1Tapped(_ sender: AnyObject) {
-        let vc = ViewController5()
+        let vc = ViewController5Jacket()
         //vc.view.backgroundColor = .red
         vc.title = "Back"
         navigationController?.pushViewController(vc, animated: true)
