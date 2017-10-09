@@ -281,7 +281,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gf2-dK-vLN" kind="show" id="5iF-IR-FUS"/>
+                                    <action selector="addToBagTapped:" destination="P1D-S6-Vp5" eventType="touchUpInside" id="gYM-IH-ira"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0w-5e-dWX">
@@ -296,8 +296,32 @@
                                 <color key="textColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTB-pS-sUc">
+                                <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2f-NI-pw9">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="V2f-NI-pw9" secondAttribute="bottom" id="THl-qY-kFe"/>
+                                    <constraint firstItem="V2f-NI-pw9" firstAttribute="leading" secondItem="OTB-pS-sUc" secondAttribute="leading" id="VGm-KN-mmQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="V2f-NI-pw9" secondAttribute="trailing" id="WOZ-GH-T18"/>
+                                    <constraint firstItem="V2f-NI-pw9" firstAttribute="top" secondItem="OTB-pS-sUc" secondAttribute="top" id="Xba-cJ-4xB"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OTB-pS-sUc" firstAttribute="leading" secondItem="4Js-8F-3t4" secondAttribute="leading" id="9A1-At-BSn"/>
+                            <constraint firstAttribute="trailing" secondItem="OTB-pS-sUc" secondAttribute="trailing" id="Kde-IT-NCk"/>
+                            <constraint firstItem="OTB-pS-sUc" firstAttribute="top" secondItem="5E5-W8-kK6" secondAttribute="bottom" id="NLE-pz-mW3"/>
+                            <constraint firstAttribute="bottom" secondItem="OTB-pS-sUc" secondAttribute="bottom" id="NRv-Fw-WHN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5E5-W8-kK6"/>
                     </view>
                     <connections>
@@ -306,6 +330,8 @@
                         <outlet property="button2" destination="pcH-l1-ee5" id="XkB-6c-OOG"/>
                         <outlet property="button3" destination="H0w-5e-dWX" id="6qY-PC-gl6"/>
                         <outlet property="button4" destination="6mE-KK-lah" id="yXP-Mn-dqm"/>
+                        <outlet property="popupViewBottomConstraint" destination="NRv-Fw-WHN" id="p1q-UJ-uIQ"/>
+                        <outlet property="popupViewTopConstraint" destination="NLE-pz-mW3" id="tfC-Ap-pah"/>
                         <outlet property="text1" destination="nz6-cy-Ew5" id="J9z-J7-kJ2"/>
                     </connections>
                 </viewController>
