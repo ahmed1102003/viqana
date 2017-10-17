@@ -12,7 +12,6 @@
 		B760B5BF1F4F791F008C2D43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B760B5BD1F4F791F008C2D43 /* Main.storyboard */; };
 		B760B5C11F4F791F008C2D43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B760B5C01F4F791F008C2D43 /* Assets.xcassets */; };
 		B760B5C41F4F791F008C2D43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B760B5C21F4F791F008C2D43 /* LaunchScreen.storyboard */; };
-		B7772EE21F8EDC5C009220CD /* ViewController6JacketSizeAndOthers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7772EDC1F8EDC5B009220CD /* ViewController6JacketSizeAndOthers.swift */; };
 		B7772EE31F8EDC5C009220CD /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7772EDD1F8EDC5B009220CD /* ViewController2.swift */; };
 		B7772EE41F8EDC5C009220CD /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7772EDE1F8EDC5B009220CD /* ViewController1.swift */; };
 		B7772EE51F8EDC5C009220CD /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7772EDF1F8EDC5C009220CD /* ViewController4.swift */; };
@@ -28,7 +27,6 @@
 		B760B5C01F4F791F008C2D43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B760B5C31F4F791F008C2D43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B760B5C51F4F791F008C2D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7772EDC1F8EDC5B009220CD /* ViewController6JacketSizeAndOthers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController6JacketSizeAndOthers.swift; path = viqana/Model/ViewController6JacketSizeAndOthers.swift; sourceTree = SOURCE_ROOT; };
 		B7772EDD1F8EDC5B009220CD /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController2.swift; path = viqana/Model/ViewController2.swift; sourceTree = SOURCE_ROOT; };
 		B7772EDE1F8EDC5B009220CD /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController1.swift; path = viqana/Model/ViewController1.swift; sourceTree = SOURCE_ROOT; };
 		B7772EDF1F8EDC5C009220CD /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController4.swift; path = viqana/Model/ViewController4.swift; sourceTree = SOURCE_ROOT; };
@@ -93,7 +91,6 @@
 				B7772EE11F8EDC5C009220CD /* ViewController3.swift */,
 				B7772EDF1F8EDC5C009220CD /* ViewController4.swift */,
 				B7772EE01F8EDC5C009220CD /* ViewController5Jacket.swift */,
-				B7772EDC1F8EDC5B009220CD /* ViewController6JacketSizeAndOthers.swift */,
 			);
 			name = Model;
 			path = Model2;
@@ -176,7 +173,6 @@
 				B7772EE41F8EDC5C009220CD /* ViewController1.swift in Sources */,
 				B7772EE31F8EDC5C009220CD /* ViewController2.swift in Sources */,
 				B760B5BA1F4F791F008C2D43 /* AppDelegate.swift in Sources */,
-				B7772EE21F8EDC5C009220CD /* ViewController6JacketSizeAndOthers.swift in Sources */,
 				B7772EE61F8EDC5C009220CD /* ViewController5Jacket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

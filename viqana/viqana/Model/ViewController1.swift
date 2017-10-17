@@ -10,13 +10,16 @@ import UIKit
 
 class ViewController1: UIViewController {
 
+    
+    @IBOutlet var popupBottomConstraint: NSLayoutConstraint!
+    @IBOutlet var popupTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var button4: UIButton!
     @IBOutlet weak var button3: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button1: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        popupBottomConstraint.isActive = false
         // Do any additional setup after loading the view.
     }
 
@@ -25,6 +28,13 @@ class ViewController1: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func addToBagTapped(_ sender: AnyObject) {
+        UIView.animate(withDuration: 0.3) {
+            self.popupBottomConstraint.isActive = true
+            self.popupTopConstraint.isActive = false
+            self.view.layoutIfNeeded()
+        }
+    }
 
     /*
     // MARK: - Navigation
