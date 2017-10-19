@@ -11,7 +11,13 @@ import UIKit
 class ViewController3: UIViewController {
 
 
+   // @IBOutlet var popupTopConstrain: NSLayoutConstraint!
     
+    
+    @IBOutlet var popupBottomConstrain: NSLayoutConstraint!
+    @IBOutlet var popupTopConstrain: NSLayoutConstraint!
+    
+    // @IBOutlet var popupBottomConstrain: NSLayoutConstraint!
     
     @IBOutlet weak var add: UIButton!
     @IBOutlet weak var text: UILabel!
@@ -21,11 +27,21 @@ class ViewController3: UIViewController {
     @IBOutlet weak var button4: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        popupBottomConstrain.isActive = false
 
         // Do any additional setup after loading the view.
     }
 
- 
+    @IBAction func addToBagTapped2(_ sender: Any) {
+        UIView.animate(withDuration: 0.3) {
+            self.popupBottomConstrain.isActive = true
+            self.popupTopConstrain.isActive = false
+            self.view.layoutIfNeeded()
+        }
+        
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

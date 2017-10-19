@@ -165,6 +165,9 @@
                                 <state key="normal" title="ADD TO BAG">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addToBagTapped2:" destination="lrP-nb-yOw" eventType="touchUpInside" id="sB9-7L-oXN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDb-m8-SxQ">
                                 <rect key="frame" x="169" y="95" width="160" height="160"/>
@@ -176,8 +179,52 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="s2"/>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oN5-cI-ZkM">
+                                <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FuF-Pg-2qT">
+                                        <rect key="frame" x="10" y="10" width="355" height="93"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRC-SM-JG8">
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
+                                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJ9-5Q-g8P">
+                                                <rect key="frame" x="0.0" y="30" width="355" height="30"/>
+                                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYU-Ng-f8g">
+                                                <rect key="frame" x="0.0" y="60" width="355" height="33"/>
+                                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <state key="normal" title="DONE">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="FuF-Pg-2qT" firstAttribute="leading" secondItem="oN5-cI-ZkM" secondAttribute="leading" constant="10" id="1pI-LD-dvO"/>
+                                    <constraint firstAttribute="bottom" secondItem="FuF-Pg-2qT" secondAttribute="bottom" constant="10" id="8ls-6l-Pgj"/>
+                                    <constraint firstItem="FuF-Pg-2qT" firstAttribute="top" secondItem="oN5-cI-ZkM" secondAttribute="top" constant="10" id="WC5-5c-coE"/>
+                                    <constraint firstAttribute="trailing" secondItem="FuF-Pg-2qT" secondAttribute="trailing" constant="10" id="sGt-8R-32D"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oN5-cI-ZkM" firstAttribute="trailing" secondItem="scD-Kz-cME" secondAttribute="trailing" id="KGN-Vy-joc"/>
+                            <constraint firstItem="oN5-cI-ZkM" firstAttribute="top" secondItem="scD-Kz-cME" secondAttribute="bottom" id="NkS-1M-RbG"/>
+                            <constraint firstItem="oN5-cI-ZkM" firstAttribute="bottom" secondItem="scD-Kz-cME" secondAttribute="bottom" id="b2r-nM-pGw"/>
+                            <constraint firstItem="oN5-cI-ZkM" firstAttribute="leading" secondItem="scD-Kz-cME" secondAttribute="leading" id="gKL-wm-q89"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="scD-Kz-cME"/>
                     </view>
                     <connections>
@@ -186,6 +233,8 @@
                         <outlet property="button2" destination="QDb-m8-SxQ" id="8l7-xa-I18"/>
                         <outlet property="button3" destination="1Re-p0-e0r" id="Aep-Nk-dB7"/>
                         <outlet property="button4" destination="eUr-xx-Qyi" id="nCR-Ok-dFX"/>
+                        <outlet property="popupBottomConstrain" destination="b2r-nM-pGw" id="i7Z-Ld-xQ2"/>
+                        <outlet property="popupTopConstrain" destination="NkS-1M-RbG" id="gfg-l9-p5z"/>
                         <outlet property="text" destination="KfD-zD-PwJ" id="Uwy-x7-cqo"/>
                     </connections>
                 </viewController>
