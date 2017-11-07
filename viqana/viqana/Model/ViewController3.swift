@@ -10,9 +10,24 @@ import UIKit
 
 class ViewController3: UIViewController {
 
+    var qty: Int = 1 {
+        didSet {
+            updateQtyLabel()
+        }
+    }
+    func updateQtyLabel() {
+         qtyLabel.text = "\(qty)"
+        if qty <= 1 {
+            minusButton.isEnabled = false
+        } else {
+            minusButton.isEnabled = true
+        }
+    }
 
-   // @IBOutlet var popupTopConstrain: NSLayoutConstraint!
+    @IBOutlet weak var minusButton: UIButton!
+    // @IBOutlet var popupTopConstrain: NSLayoutConstraint!
     
+    @IBOutlet weak var qtyLabel: UILabel!
     
     @IBOutlet var popupBottomConstrain: NSLayoutConstraint!
     @IBOutlet var popupTopConstrain: NSLayoutConstraint!
@@ -27,7 +42,7 @@ class ViewController3: UIViewController {
     @IBOutlet weak var button4: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        updateQtyLabel()
         popupBottomConstrain.isActive = false
 
         // Do any additional setup after loading the view.
@@ -47,7 +62,13 @@ class ViewController3: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func minusButtonTapped(_ sender: Any) {
+        qty = max(1, qty - 1)
+    }
+    
+    @IBAction func addButtonTapped(_ sender: Any) {
+        qty = qty + 1
+    }
     /*
     // MARK: - Navigation
 

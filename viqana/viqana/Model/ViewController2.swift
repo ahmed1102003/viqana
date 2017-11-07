@@ -12,6 +12,24 @@ import UIKit
 class ViewController2: UIViewController{
     
     
+    @IBOutlet weak var button1: UIButton!
+    
+    @IBOutlet weak var button2: UIButton!
+    
+    @IBOutlet weak var button3: UIButton!
+
+    @IBOutlet weak var button4: UIButton!
+    
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    // Do any additional setup after loading the view.
+}
+override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+}
     
     
 }
