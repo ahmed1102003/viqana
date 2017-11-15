@@ -10,6 +10,19 @@ import UIKit
 
 class ViewController1: UIViewController {
 
+    @IBOutlet weak var x2sButton: UIButton!
+    
+    
+    @IBOutlet weak var xsButton: UIButton!
+    
+    @IBOutlet weak var SButton: UIButton!
+    
+    @IBOutlet weak var MButton: UIButton!
+    
+    @IBOutlet weak var LButton: UIButton!
+    
+    @IBOutlet weak var XLButton: UIButton!
+    
     
     @IBOutlet var popupBottomConstraint: NSLayoutConstraint!
     @IBOutlet var popupTopConstraint: NSLayoutConstraint!
@@ -17,12 +30,55 @@ class ViewController1: UIViewController {
     @IBOutlet weak var button3: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button1: UIButton!
+    
+    var qty: Int = 1 {
+        didSet {
+            updateQtyLabel()
+        }
+    }
+    func updateQtyLabel() {
+        qtyLabel.text = "\(qty)"
+        if qty <= 1 {
+            minusButton.isEnabled = false
+        } else {
+            minusButton.isEnabled = true
+        }
+    }
+    
+    
+    @IBOutlet weak var add: UIButton!
+    
+    @IBOutlet weak var minusButton: UIButton!
+    
+    @IBOutlet weak var qtyLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         popupBottomConstraint.isActive = false
         // Do any additional setup after loading the view.
+        
+        let spacing: CGFloat = 12
+        xsButton.contentEdgeInsets = UIEdgeInsets(top: 30, left: spacing, bottom: 30, right: spacing)
+         SButton.contentEdgeInsets = UIEdgeInsets(top: 20, left: spacing, bottom: 20, right: spacing)
+         MButton.contentEdgeInsets = UIEdgeInsets(top: 20, left: spacing, bottom: 20, right: spacing)
+         LButton.contentEdgeInsets = UIEdgeInsets(top: 20, left: spacing, bottom: 20, right: spacing)
+         XLButton.contentEdgeInsets = UIEdgeInsets(top: 20, left: spacing, bottom: 20, right: spacing)
+        
+        xsButton.setTitleColor(.black, for: .normal)
+        xsButton.titleLabel?.font = .systemFont(ofSize: 21)
+
     }
 
+    @IBAction func minusButtonTapped(_ sender: Any) {
+        qty = max(1, qty - 1)
+    }
+    
+    @IBAction func addButtonTapped(_ sender: Any) {
+        qty = qty + 1
+    }
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

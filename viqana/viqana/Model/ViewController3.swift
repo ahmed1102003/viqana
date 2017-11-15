@@ -34,6 +34,16 @@ class ViewController3: UIViewController {
     
     // @IBOutlet var popupBottomConstrain: NSLayoutConstraint!
     
+    @IBOutlet weak var xsButton: UIButton!
+    
+    @IBOutlet weak var sButton: UIButton!
+    
+    @IBOutlet weak var mButton: UIButton!
+    
+    @IBOutlet weak var xlButton: UIButton!
+    
+    @IBOutlet weak var lButton: UIButton!
+    
     @IBOutlet weak var add: UIButton!
     @IBOutlet weak var text: UILabel!
     @IBOutlet weak var button1: UIButton!
@@ -46,6 +56,16 @@ class ViewController3: UIViewController {
         popupBottomConstrain.isActive = false
 
         // Do any additional setup after loading the view.
+    
+    
+    let spacing: CGFloat = 12
+    
+    xsButton.contentEdgeInsets = UIEdgeInsets(top: 30, left: spacing, bottom: 30, right: spacing)
+    sButton.contentEdgeInsets = UIEdgeInsets(top: 30, left: spacing, bottom: 30, right: spacing)
+    mButton.contentEdgeInsets = UIEdgeInsets(top: 30, left: spacing, bottom: 30, right: spacing)
+    lButton.contentEdgeInsets = UIEdgeInsets(top: 30, left: spacing, bottom: 30, right: spacing)
+    xlButton.contentEdgeInsets = UIEdgeInsets(top: 30, left: spacing, bottom: 30, right: spacing)
+    
     }
 
     @IBAction func addToBagTapped2(_ sender: Any) {
