@@ -27,6 +27,10 @@ class ViewController3: UIViewController {
     @IBOutlet weak var minusButton: UIButton!
     // @IBOutlet var popupTopConstrain: NSLayoutConstraint!
     
+    
+    @IBOutlet weak var Sizeguide: UIButton!
+    
+    
     @IBOutlet weak var qtyLabel: UILabel!
     
     @IBOutlet var popupBottomConstrain: NSLayoutConstraint!

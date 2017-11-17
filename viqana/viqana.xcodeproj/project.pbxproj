@@ -17,6 +17,7 @@
 		B7772EE51F8EDC5C009220CD /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7772EDF1F8EDC5C009220CD /* ViewController4.swift */; };
 		B7772EE61F8EDC5C009220CD /* ViewController5Jacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7772EE01F8EDC5C009220CD /* ViewController5Jacket.swift */; };
 		B7772EE71F8EDC5C009220CD /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7772EE11F8EDC5C009220CD /* ViewController3.swift */; };
+		B7AA16251FBF40A100660897 /* SizeguideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AA16241FBF40A100660897 /* SizeguideViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B7772EDF1F8EDC5C009220CD /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController4.swift; path = viqana/Model/ViewController4.swift; sourceTree = SOURCE_ROOT; };
 		B7772EE01F8EDC5C009220CD /* ViewController5Jacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController5Jacket.swift; path = viqana/Model/ViewController5Jacket.swift; sourceTree = SOURCE_ROOT; };
 		B7772EE11F8EDC5C009220CD /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController3.swift; path = viqana/Model/ViewController3.swift; sourceTree = SOURCE_ROOT; };
+		B7AA16241FBF40A100660897 /* SizeguideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeguideViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				B7772EE11F8EDC5C009220CD /* ViewController3.swift */,
 				B7772EDF1F8EDC5C009220CD /* ViewController4.swift */,
 				B7772EE01F8EDC5C009220CD /* ViewController5Jacket.swift */,
+				B7AA16241FBF40A100660897 /* SizeguideViewController.swift */,
 			);
 			name = Model;
 			path = Model2;
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7AA16251FBF40A100660897 /* SizeguideViewController.swift in Sources */,
 				B760B5BC1F4F791F008C2D43 /* ViewController.swift in Sources */,
 				B7772EE51F8EDC5C009220CD /* ViewController4.swift in Sources */,
 				B7772EE71F8EDC5C009220CD /* ViewController3.swift in Sources */,
