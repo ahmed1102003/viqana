@@ -17,6 +17,8 @@
 		B7772EE51F8EDC5C009220CD /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7772EDF1F8EDC5C009220CD /* ViewController4.swift */; };
 		B7772EE61F8EDC5C009220CD /* ViewController5Jacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7772EE01F8EDC5C009220CD /* ViewController5Jacket.swift */; };
 		B7772EE71F8EDC5C009220CD /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7772EE11F8EDC5C009220CD /* ViewController3.swift */; };
+		B7A5B39F1FC7390700DDB689 /* StyleGuideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A5B39E1FC7390700DDB689 /* StyleGuideCell.swift */; };
+		B7A5B3A11FC7448400DDB689 /* StyleGuideHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7A5B3A01FC7448400DDB689 /* StyleGuideHeader.xib */; };
 		B7AA16251FBF40A100660897 /* SizeguideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AA16241FBF40A100660897 /* SizeguideViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		B7772EDF1F8EDC5C009220CD /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController4.swift; path = viqana/Model/ViewController4.swift; sourceTree = SOURCE_ROOT; };
 		B7772EE01F8EDC5C009220CD /* ViewController5Jacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController5Jacket.swift; path = viqana/Model/ViewController5Jacket.swift; sourceTree = SOURCE_ROOT; };
 		B7772EE11F8EDC5C009220CD /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController3.swift; path = viqana/Model/ViewController3.swift; sourceTree = SOURCE_ROOT; };
+		B7A5B39E1FC7390700DDB689 /* StyleGuideCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuideCell.swift; sourceTree = "<group>"; };
+		B7A5B3A01FC7448400DDB689 /* StyleGuideHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StyleGuideHeader.xib; sourceTree = "<group>"; };
 		B7AA16241FBF40A100660897 /* SizeguideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeguideViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -74,6 +78,7 @@
 				B760B5C01F4F791F008C2D43 /* Assets.xcassets */,
 				B760B5C21F4F791F008C2D43 /* LaunchScreen.storyboard */,
 				B760B5C51F4F791F008C2D43 /* Info.plist */,
+				B7A5B3A01FC7448400DDB689 /* StyleGuideHeader.xib */,
 			);
 			path = viqana;
 			sourceTree = "<group>";
@@ -81,6 +86,7 @@
 		B760B5CB1F591212008C2D43 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B7A5B39E1FC7390700DDB689 /* StyleGuideCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -158,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B760B5C41F4F791F008C2D43 /* LaunchScreen.storyboard in Resources */,
+				B7A5B3A11FC7448400DDB689 /* StyleGuideHeader.xib in Resources */,
 				B760B5C11F4F791F008C2D43 /* Assets.xcassets in Resources */,
 				B760B5BF1F4F791F008C2D43 /* Main.storyboard in Resources */,
 			);
@@ -174,6 +181,7 @@
 				B760B5BC1F4F791F008C2D43 /* ViewController.swift in Sources */,
 				B7772EE51F8EDC5C009220CD /* ViewController4.swift in Sources */,
 				B7772EE71F8EDC5C009220CD /* ViewController3.swift in Sources */,
+				B7A5B39F1FC7390700DDB689 /* StyleGuideCell.swift in Sources */,
 				B7772EE41F8EDC5C009220CD /* ViewController1.swift in Sources */,
 				B7772EE31F8EDC5C009220CD /* ViewController2.swift in Sources */,
 				B760B5BA1F4F791F008C2D43 /* AppDelegate.swift in Sources */,
