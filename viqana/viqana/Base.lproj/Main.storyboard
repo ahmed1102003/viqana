@@ -133,7 +133,7 @@
             </objects>
             <point key="canvasLocation" x="815.20000000000005" y="138.98050974512745"/>
         </scene>
-        <!--View Controller3-->
+        <!--Title-->
         <scene sceneID="uku-7N-C4K">
             <objects>
                 <viewController id="lrP-nb-yOw" customClass="ViewController3" customModule="viqana" customModuleProvider="target" sceneMemberID="viewController">
@@ -189,12 +189,9 @@
                                         <state key="normal" title="Size guide">
                                             <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="NQx-Z9-hEE" kind="show" id="mAq-gQ-RTu"/>
-                                        </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="FuF-Pg-2qT">
-                                        <rect key="frame" x="10" y="10" width="355" height="223"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="FuF-Pg-2qT">
+                                        <rect key="frame" x="10" y="10" width="355" height="272"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eww-94-Nsl" userLabel="Size">
                                                 <rect key="frame" x="161.5" y="0.0" width="32.5" height="20.5"/>
@@ -205,60 +202,75 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GBp-RK-l7n">
                                                 <rect key="frame" x="102.5" y="36.5" width="150" height="38"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQG-kP-G5m">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQG-kP-G5m" customClass="CircledButton" customModule="viqana" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="38"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <state key="normal" title="XS">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="addsizeXS:" destination="lrP-nb-yOw" eventType="touchUpInside" id="SY5-u9-jJ1"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IT-5f-bcV" userLabel="S">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IT-5f-bcV" userLabel="S" customClass="CircledButton" customModule="viqana" customModuleProvider="target">
                                                         <rect key="frame" x="30" y="0.0" width="30" height="38"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <state key="normal" title="S">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="addsizeS:" destination="lrP-nb-yOw" eventType="touchUpInside" id="4dk-LW-0Or"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erf-hV-hqm">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erf-hV-hqm" customClass="CircledButton" customModule="viqana" customModuleProvider="target">
                                                         <rect key="frame" x="60" y="0.0" width="30" height="38"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <state key="normal" title="M">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="addsizeM:" destination="lrP-nb-yOw" eventType="touchUpInside" id="x24-MJ-t8w"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6Z-aI-RjN">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6Z-aI-RjN" customClass="CircledButton" customModule="viqana" customModuleProvider="target">
                                                         <rect key="frame" x="90" y="0.0" width="30" height="38"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <state key="normal" title="L">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="addsizeL:" destination="lrP-nb-yOw" eventType="touchUpInside" id="Q8q-ma-yLt"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iO5-Kb-qlR">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iO5-Kb-qlR" customClass="CircledButton" customModule="viqana" customModuleProvider="target">
                                                         <rect key="frame" x="120" y="0.0" width="30" height="38"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <state key="normal" title="XL">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="addsizeXL:" destination="lrP-nb-yOw" eventType="touchUpInside" id="TIT-dd-1G1"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4r-vI-j0N">
-                                                <rect key="frame" x="0.0" y="90.5" width="355" height="1"/>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g4r-vI-j0N">
+                                                <rect key="frame" x="0.0" y="90.5" width="355" height="50"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="ter-ad-IG3"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4S-Bc-IAm" userLabel="Qty">
-                                                <rect key="frame" x="164" y="107.5" width="27.5" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Qty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4S-Bc-IAm" userLabel="Qty">
+                                                <rect key="frame" x="164" y="156.5" width="27.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="BrK-yA-sNf">
-                                                <rect key="frame" x="103" y="144" width="149" height="30"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="BrK-yA-sNf">
+                                                <rect key="frame" x="103" y="193" width="149" height="30"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJ9-5Q-g8P">
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJ9-5Q-g8P">
                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                                         <state key="normal" title="-">
@@ -268,7 +280,7 @@
                                                             <action selector="minusButtonTapped:" destination="lrP-nb-yOw" eventType="touchUpInside" id="G3m-pn-ghq"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BY1-XY-Srw">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BY1-XY-Srw">
                                                         <rect key="frame" x="46" y="0.0" width="57" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="HNx-1L-7YR"/>
@@ -277,7 +289,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRC-SM-JG8">
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRC-SM-JG8">
                                                         <rect key="frame" x="119" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                                         <state key="normal" title="+">
@@ -289,21 +301,20 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYU-Ng-f8g">
-                                                <rect key="frame" x="0.0" y="190" width="355" height="33"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYU-Ng-f8g">
+                                                <rect key="frame" x="0.0" y="239" width="355" height="33"/>
                                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <state key="normal" title="DONE">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="NQx-Z9-hEE" kind="show" id="XX7-KX-TIm"/>
+                                                    <action selector="doneButtonTapped:" destination="lrP-nb-yOw" eventType="touchUpInside" id="Zjp-ij-cIy"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="g4r-vI-j0N" secondAttribute="trailing" id="I4K-XJ-Zii"/>
-                                            <constraint firstItem="eww-94-Nsl" firstAttribute="top" secondItem="FuF-Pg-2qT" secondAttribute="top" constant="5" id="c9d-Kd-6Nx"/>
                                             <constraint firstItem="rYU-Ng-f8g" firstAttribute="leading" secondItem="FuF-Pg-2qT" secondAttribute="leading" id="nYM-cq-33h"/>
                                             <constraint firstItem="g4r-vI-j0N" firstAttribute="leading" secondItem="FuF-Pg-2qT" secondAttribute="leading" id="oU2-KR-p3e"/>
                                             <constraint firstAttribute="trailing" secondItem="rYU-Ng-f8g" secondAttribute="trailing" id="yIQ-9f-6qv"/>
@@ -330,6 +341,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="scD-Kz-cME"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="tMl-a3-tl4">
+                        <barButtonItem key="rightBarButtonItem" title="Cart" id="K7X-eI-KAb"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="Sizeguide" destination="Max-Jo-rac" id="28d-lg-6d4"/>
                         <outlet property="add" destination="46a-ci-bPQ" id="OLE-Br-6oO"/>
@@ -337,6 +351,7 @@
                         <outlet property="button2" destination="QDb-m8-SxQ" id="8l7-xa-I18"/>
                         <outlet property="button3" destination="1Re-p0-e0r" id="Aep-Nk-dB7"/>
                         <outlet property="button4" destination="eUr-xx-Qyi" id="nCR-Ok-dFX"/>
+                        <outlet property="doneButton" destination="rYU-Ng-f8g" id="93s-fG-GdK"/>
                         <outlet property="lButton" destination="a6Z-aI-RjN" id="zcg-Al-2y6"/>
                         <outlet property="mButton" destination="erf-hV-hqm" id="NPi-Ot-QeY"/>
                         <outlet property="minusButton" destination="hJ9-5Q-g8P" id="11g-ki-OjQ"/>
@@ -731,6 +746,21 @@
             </objects>
             <point key="canvasLocation" x="2669.5999999999999" y="-269.41529235382313"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="dYM-Wc-UMK">
+            <objects>
+                <viewController id="YdY-dE-Ey9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xxW-ep-se5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="5Fm-Mc-GdU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VEN-TY-ElI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3549.5999999999999" y="53.523238380809602"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ckn-nm-BWn">
             <objects>
@@ -823,7 +853,4 @@
         <image name="s1" width="5906" height="5906"/>
         <image name="s2" width="2953" height="2953"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="XX7-KX-TIm"/>
-    </inferredMetricsTieBreakers>
 </document>
