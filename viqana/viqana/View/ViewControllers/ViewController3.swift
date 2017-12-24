@@ -18,12 +18,6 @@ class ViewController3: UIViewController {
     }
     func updateQtyLabel() {
          qtyLabel.text = "\(qty)"
-        if qty <= 1 {
-            minusButton.isEnabled = false
-        } else {
-            minusButton.isEnabled = true
-        }
-        print(qty)
     }
     
     
@@ -40,25 +34,17 @@ class ViewController3: UIViewController {
             case .l?: lButton.isCircleVisible = true
             case .xl?: xlButton.isCircleVisible = true
             case .none:
-                doneButton.isEnabled = false
-                doneButton.backgroundColor = .gray
                 return
             }
+           removeErrorMessage()
             doneButton.isEnabled = true
-            doneButton.backgroundColor = .salmonColor
         }
     }
     
     //var sizeslected : String = ""
     
     
-    enum Size {
-        case xs
-        case s
-        case m
-        case l
-        case xl
-    }
+   
 
 
     @IBOutlet weak var minusButton: UIButton!
@@ -74,7 +60,6 @@ class ViewController3: UIViewController {
     @IBOutlet var popupTopConstrain: NSLayoutConstraint!
     
     // @IBOutlet var popupBottomConstrain: NSLayoutConstraint!
-    
     @IBOutlet weak var xsButton: CircledButton!
     
     @IBOutlet weak var sButton: CircledButton!
@@ -85,6 +70,8 @@ class ViewController3: UIViewController {
     
     @IBOutlet weak var lButton: CircledButton!
     
+
+    
     @IBOutlet weak var add: UIButton!
     @IBOutlet weak var text: UILabel!
     @IBOutlet weak var button1: UIButton!
@@ -93,8 +80,6 @@ class ViewController3: UIViewController {
     @IBOutlet weak var button4: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        doneButton.isEnabled = false
-        doneButton.backgroundColor = .gray
         updateQtyLabel()
         popupBottomConstrain.isActive = false
 
@@ -197,8 +182,31 @@ class ViewController3: UIViewController {
     }
     */
 
+    func displayError() {
+        if let _ = errorMessageView { return }
+        let v = ErrorMessageView()
+        v.label.text  = "You need to select a size"
+        view.addSubview(v)
+        (v.centerXAnchor.constraint(equalTo: view.centerXAnchor)).isActive = true
+        (v.centerYAnchor.constraint(equalTo: view.centerYAnchor)).isActive = true
+        self.errorMessageView = v
+    }
+    weak var errorMessageView: ErrorMessageView?
+    
+    func removeErrorMessage() {
+        errorMessageView?.removeFromSuperview()
+    }
+    
     @IBOutlet weak var doneButton: UIButton!
     @IBAction func doneButtonTapped(_ sender: Any) {
+        guard let _ = selectedSize else {
+            displayError()
+            return
+        }
+        
+        
+        
+        
         animateItemToCart()
         numberOfItemsInCart = numberOfItemsInCart + qty
     }
