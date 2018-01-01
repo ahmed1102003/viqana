@@ -87,6 +87,13 @@ class ViewController3: UIViewController {
         let countLabel = UILabel()
         countLabel.isHidden = true
         countLabel.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
+        // I am trying to add color backround to the number on the top right  AY
+        countLabel.backgroundColor = UIColor(red: 1, green:
+            102/255.0, blue:102/255.0, alpha: 1)
+        // countLabel.cornerRadius = bounds.size.width / 2
+        
+        // End of my adding AY the red is there but it's not circle
+        
         let rightBarButtonItem = UIBarButtonItem(customView: countLabel)
         self.countLabel = countLabel
         navigationItem.rightBarButtonItem = rightBarButtonItem
@@ -185,7 +192,7 @@ class ViewController3: UIViewController {
     func displayError() {
         if let _ = errorMessageView { return }
         let v = ErrorMessageView()
-        v.label.text  = "You need to select a size"
+        v.label.text  = "Please select a size"
         view.addSubview(v)
         (v.centerXAnchor.constraint(equalTo: view.centerXAnchor)).isActive = true
         (v.centerYAnchor.constraint(equalTo: view.centerYAnchor)).isActive = true
@@ -198,18 +205,20 @@ class ViewController3: UIViewController {
     }
     
     @IBOutlet weak var doneButton: UIButton!
+    
+    
+    
     @IBAction func doneButtonTapped(_ sender: Any) {
         guard let _ = selectedSize else {
             displayError()
             return
         }
-        
-        
-        
-        
         animateItemToCart()
         numberOfItemsInCart = numberOfItemsInCart + qty
     }
+    
+    
+    
     var numberOfItemsInCart: Int = 0 {
         didSet {
             countLabel.text = "\(numberOfItemsInCart)"
@@ -217,6 +226,8 @@ class ViewController3: UIViewController {
         }
     }
     weak var countLabel: UILabel!
+    
+    
     func animateItemToCart() {
         let itemView = UIImageView(image: #imageLiteral(resourceName: "Jacket"))
         let size: CGFloat = 50
@@ -237,10 +248,7 @@ class ViewController3: UIViewController {
             centerY.isActive = false
             itemView.centerXAnchor.constraint(equalTo: self.view.rightAnchor, constant: -(size/CGFloat(2) + 10) ).isActive = true
             itemView.centerYAnchor.constraint(equalTo: self.view.topAnchor, constant: (size/CGFloat(2) + 10) ).isActive = true
-           
-            
-            
-            self.navigationController!.view.layoutIfNeeded()
+           self.navigationController!.view.layoutIfNeeded()
         }, completion: { _ in itemView.removeFromSuperview() })
         
         UIView.animate(withDuration: animationDuration / 2, animations: {
@@ -282,4 +290,5 @@ class CircledButton: UIButton {
 extension UIColor {
     static let salmonColor: UIColor = UIColor(red: 1, green:
         102/255.0, blue:102/255.0, alpha: 1)
+   
 }
