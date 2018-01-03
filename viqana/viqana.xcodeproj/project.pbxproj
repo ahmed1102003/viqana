@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B70B16201FFBCB9B00D78443 /* CartBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70B161F1FFBCB9B00D78443 /* CartBarButtonItem.swift */; };
 		B760B5BA1F4F791F008C2D43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760B5B91F4F791F008C2D43 /* AppDelegate.swift */; };
 		B760B5BC1F4F791F008C2D43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760B5BB1F4F791F008C2D43 /* ViewController.swift */; };
 		B760B5BF1F4F791F008C2D43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B760B5BD1F4F791F008C2D43 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B70B161F1FFBCB9B00D78443 /* CartBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartBarButtonItem.swift; sourceTree = "<group>"; };
 		B760B5B61F4F791F008C2D43 /* viqana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viqana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B760B5B91F4F791F008C2D43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B760B5BB1F4F791F008C2D43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				B7A9CB1E1FEFFABE0065B739 /* ViewControllers */,
 				B7A5B39E1FC7390700DDB689 /* StyleGuideCell.swift */,
 				B7F853891FEFFFE300B37EEE /* ErrorMessageView.swift */,
+				B70B161F1FFBCB9B00D78443 /* CartBarButtonItem.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B70B16201FFBCB9B00D78443 /* CartBarButtonItem.swift in Sources */,
 				B7AA16251FBF40A100660897 /* SizeguideViewController.swift in Sources */,
 				B760B5BC1F4F791F008C2D43 /* ViewController.swift in Sources */,
 				B7F8538A1FEFFFE300B37EEE /* ErrorMessageView.swift in Sources */,

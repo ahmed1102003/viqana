@@ -84,21 +84,15 @@ class ViewController3: UIViewController {
         popupBottomConstrain.isActive = false
 
         
-        let countLabel = UILabel()
-        countLabel.isHidden = true
-        countLabel.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
-        // I am trying to add color backround to the number on the top right  AY
-        countLabel.backgroundColor = UIColor(red: 1, green:
-            102/255.0, blue:102/255.0, alpha: 1)
-        // countLabel.cornerRadius = bounds.size.width / 2
         
-        // End of my adding AY the red is there but it's not circle
         
-        let rightBarButtonItem = UIBarButtonItem(customView: countLabel)
-        self.countLabel = countLabel
-        navigationItem.rightBarButtonItem = rightBarButtonItem
+        
+        
+        let cartItem = CartBarButtonItem()
+        navigationItem.rightBarButtonItem = cartItem
+        self.cartItem = cartItem
+        
         // Do any additional setup after loading the view.
-    
     
     let spacing: CGFloat = 12
     
@@ -221,15 +215,15 @@ class ViewController3: UIViewController {
     
     var numberOfItemsInCart: Int = 0 {
         didSet {
-            countLabel.text = "\(numberOfItemsInCart)"
-            countLabel.isHidden = numberOfItemsInCart <= 0
+           cartItem.count = numberOfItemsInCart
+         
         }
     }
-    weak var countLabel: UILabel!
-    
-    
+ 
+    weak var cartItem: CartBarButtonItem!
     func animateItemToCart() {
-        let itemView = UIImageView(image: #imageLiteral(resourceName: "Jacket"))
+//let itemView = UIImageView(image: #imageLiteral(resourceName: "Jacket"))
+       let itemView = UIImageView(image: #imageLiteral(resourceName: "s2"))
         let size: CGFloat = 50
         itemView.clipsToBounds = true
         itemView.layer.cornerRadius = size/CGFloat(2)
