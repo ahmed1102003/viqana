@@ -18,6 +18,7 @@
 		B7772EE51F8EDC5C009220CD /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7772EDF1F8EDC5C009220CD /* ViewController4.swift */; };
 		B7772EE61F8EDC5C009220CD /* ViewController5Jacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7772EE01F8EDC5C009220CD /* ViewController5Jacket.swift */; };
 		B7772EE71F8EDC5C009220CD /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7772EE11F8EDC5C009220CD /* ViewController3.swift */; };
+		B77BBEEE2001B52200835C02 /* CheckoutPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77BBEED2001B52200835C02 /* CheckoutPage.swift */; };
 		B7A5B39F1FC7390700DDB689 /* StyleGuideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A5B39E1FC7390700DDB689 /* StyleGuideCell.swift */; };
 		B7A5B3A11FC7448400DDB689 /* StyleGuideHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7A5B3A01FC7448400DDB689 /* StyleGuideHeader.xib */; };
 		B7AA16251FBF40A100660897 /* SizeguideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AA16241FBF40A100660897 /* SizeguideViewController.swift */; };
@@ -39,6 +40,7 @@
 		B7772EDF1F8EDC5C009220CD /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController4.swift; path = viqana/View/ViewControllers/ViewController4.swift; sourceTree = SOURCE_ROOT; };
 		B7772EE01F8EDC5C009220CD /* ViewController5Jacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController5Jacket.swift; path = viqana/View/ViewControllers/ViewController5Jacket.swift; sourceTree = SOURCE_ROOT; };
 		B7772EE11F8EDC5C009220CD /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController3.swift; path = viqana/View/ViewControllers/ViewController3.swift; sourceTree = SOURCE_ROOT; };
+		B77BBEED2001B52200835C02 /* CheckoutPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutPage.swift; sourceTree = "<group>"; };
 		B7A5B39E1FC7390700DDB689 /* StyleGuideCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuideCell.swift; sourceTree = "<group>"; };
 		B7A5B3A01FC7448400DDB689 /* StyleGuideHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StyleGuideHeader.xib; sourceTree = "<group>"; };
 		B7AA16241FBF40A100660897 /* SizeguideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SizeguideViewController.swift; path = viqana/View/ViewControllers/SizeguideViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -81,6 +83,7 @@
 				B760B5B91F4F791F008C2D43 /* AppDelegate.swift */,
 				B760B5BB1F4F791F008C2D43 /* ViewController.swift */,
 				B760B5BD1F4F791F008C2D43 /* Main.storyboard */,
+				B77BBEED2001B52200835C02 /* CheckoutPage.swift */,
 				B760B5C01F4F791F008C2D43 /* Assets.xcassets */,
 				B760B5C21F4F791F008C2D43 /* LaunchScreen.storyboard */,
 				B760B5C51F4F791F008C2D43 /* Info.plist */,
@@ -203,6 +206,7 @@
 				B7A5B39F1FC7390700DDB689 /* StyleGuideCell.swift in Sources */,
 				B7772EE41F8EDC5C009220CD /* ViewController1.swift in Sources */,
 				B7F853861FEFFB8D00B37EEE /* Size.swift in Sources */,
+				B77BBEEE2001B52200835C02 /* CheckoutPage.swift in Sources */,
 				B7772EE31F8EDC5C009220CD /* ViewController2.swift in Sources */,
 				B760B5BA1F4F791F008C2D43 /* AppDelegate.swift in Sources */,
 				B7772EE61F8EDC5C009220CD /* ViewController5Jacket.swift in Sources */,

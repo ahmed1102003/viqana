@@ -42,10 +42,6 @@ class ViewController3: UIViewController {
     }
     
     //var sizeslected : String = ""
-    
-    
-   
-
 
     @IBOutlet weak var minusButton: UIButton!
     // @IBOutlet var popupTopConstrain: NSLayoutConstraint!
@@ -70,7 +66,8 @@ class ViewController3: UIViewController {
     
     @IBOutlet weak var lButton: CircledButton!
     
-
+    // AY Added
+    @IBOutlet weak var Cart: UINavigationItem!
     
     @IBOutlet weak var add: UIButton!
     @IBOutlet weak var text: UILabel!
@@ -83,12 +80,9 @@ class ViewController3: UIViewController {
         updateQtyLabel()
         popupBottomConstrain.isActive = false
 
-        
-        
-        
-        
-        
         let cartItem = CartBarButtonItem()
+        cartItem.button.addTarget(self, action: #selector(cartTapped), for: .touchUpInside)
+        
         navigationItem.rightBarButtonItem = cartItem
         self.cartItem = cartItem
         
@@ -117,7 +111,31 @@ class ViewController3: UIViewController {
     //xlButton.contentEdgeInsets = UIEdgeInsets(top: 30, left: spacing, bottom: 30, right: spacing)
     
     }
-
+    
+    @objc func cartTapped() {
+        performSegue(withIdentifier: "vc3ToCheckout", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "vc3ToCheckout"?:
+            guard let destination = segue.destination as? CheckoutPage else { assertionFailure(); return }
+            _ = destination.view
+            destination.qty = numberOfItemsInCart
+        default:
+            break
+        }
+    }
+/*
+   // AY Added
+    @IBAction func Cart(_ sender: Any) {
+    
+        print("cr7")
+        numberOfItemsInCart = numberOfItemsInCart + qty
+        cartItem.count = numberOfItemsInCart
+    }
+    */
+    
     @IBAction func addToBagTapped2(_ sender: Any) {
         UIView.animate(withDuration: 0.3) {
             self.popupBottomConstrain.isActive = true

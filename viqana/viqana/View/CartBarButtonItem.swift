@@ -25,21 +25,19 @@ class CartBarButtonItem: UIBarButtonItem {
         countLabel.layer.cornerRadius = countLabel.bounds.size.width / 2
         
         // End of my adding AY the red is there but it's not circle
-        
-        let imageView = UIImageView()
-        //imageView.image = #imageLiteral(resourceName: "Jacket7")
-         imageView.image = #imageLiteral(resourceName: "s2")
-        imageView.isHidden = true
+        let button = UIButton()
+        button.setImage(#imageLiteral(resourceName: "s2"), for: .normal)
+        button.isHidden = true
         // imageView.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.heightAnchor.constraint(equalToConstant: 25).isActive = true
-        imageView.widthAnchor.constraint(equalToConstant: 25).isActive = true
-        imageView.addSubview(countLabel)
-        
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.heightAnchor.constraint(equalToConstant: 25).isActive = true
+        button.widthAnchor.constraint(equalToConstant: 25).isActive = true
+        button.addSubview(countLabel)
+        button.isUserInteractionEnabled = true
         super.init()
-        self.customView = imageView
+        self.customView = button
         self.countLabel = countLabel
-        self.imageView = imageView
+        self.button = button
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -47,12 +45,12 @@ class CartBarButtonItem: UIBarButtonItem {
     }
     
     private weak var countLabel: UILabel!
-    private weak var imageView: UIImageView!
+    weak var button: UIButton!
     
     var count: Int = 0 {
         didSet {
             countLabel.text = "\(count)"
-            imageView.isHidden = count <= 0
+            button.isHidden = count <= 0
         }
     }
 }
