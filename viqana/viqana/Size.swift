@@ -15,4 +15,14 @@ enum Size {
     case m
     case l
     case xl
+    
+    var text: String {
+        switch self {
+        case .xs: return "XS"
+         case .s: return "S"
+         case .m: return "M"
+        case .l: return "L"
+             case .xl: return "XL"
+        }
+    }
 }

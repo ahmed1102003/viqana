@@ -8,9 +8,21 @@
 
 import UIKit
 
+
+struct Item {
+    let image: UIImage
+    let size: Size
+    let name: String
+    let price: Double
+}
+
+var cart: [Item] = []
+
+
 class ViewController3: UIViewController {
 
-   
+    
+    
     var qty: Int = 1 {
         didSet {
             updateQtyLabel()
@@ -115,17 +127,16 @@ class ViewController3: UIViewController {
     @objc func cartTapped() {
         performSegue(withIdentifier: "vc3ToCheckout", sender: self)
     }
-    
+    /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case "vc3ToCheckout"?:
             guard let destination = segue.destination as? CheckoutPage else { assertionFailure(); return }
             _ = destination.view
-            destination.qty = numberOfItemsInCart
         default:
             break
         }
-    }
+    }*/
 /*
    // AY Added
     @IBAction func Cart(_ sender: Any) {
@@ -163,26 +174,35 @@ class ViewController3: UIViewController {
     @IBAction func addsizeXS(_ sender: Any)
     {
         selectedSize = .xs
+       
     }
     
     @IBAction func addsizeS(_ sender: Any)
     {
         selectedSize = .s
+       
+
     }
     
     @IBAction func addsizeM(_ sender: Any)
     {
        selectedSize = .m
+        
+
     }
     
     @IBAction func addsizeL(_ sender: Any)
     {
        selectedSize = .l
+       
+
     }
     
     @IBAction func addsizeXL(_ sender:Any)
     {
         selectedSize = .xl
+        
+
     }
     
     
@@ -221,21 +241,23 @@ class ViewController3: UIViewController {
     
     
     @IBAction func doneButtonTapped(_ sender: Any) {
-        guard let _ = selectedSize else {
+        guard let selectedSize = selectedSize else {
             displayError()
             return
         }
         animateItemToCart()
-        numberOfItemsInCart = numberOfItemsInCart + qty
+        let newItems = Array(0..<qty).map { _ in
+            Item(image: #imageLiteral(resourceName: "Jacket7"), size: selectedSize, name: "skirt", price: 10 )
+        }
+        cart = cart + newItems
+        cartItem.count = numberOfItemsInCart
+
     }
     
     
     
-    var numberOfItemsInCart: Int = 0 {
-        didSet {
-           cartItem.count = numberOfItemsInCart
-         
-        }
+    var numberOfItemsInCart: Int {
+        return cart.count
     }
  
     weak var cartItem: CartBarButtonItem!
