@@ -247,7 +247,7 @@ class ViewController3: UIViewController {
         }
         animateItemToCart()
         let newItems = Array(0..<qty).map { _ in
-            Item(image: #imageLiteral(resourceName: "Jacket7"), size: selectedSize, name: "skirt", price: 10 )
+            Item(image: #imageLiteral(resourceName: "s1"), size: selectedSize, name: "skirt", price: 110.70 )
         }
         cart = cart + newItems
         cartItem.count = numberOfItemsInCart

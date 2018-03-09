@@ -7,24 +7,45 @@
 //
 
 import UIKit
+import PassKit
 
-class CheckoutPage: UITableViewController {
+class CheckoutPage: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-
+    @IBOutlet weak var tableView: UITableView!
+    
+    
+    @IBOutlet weak var vStack: UIStackView!
     
     override func viewDidLoad() {
     super.viewDidLoad()
       /*  tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 250*/
         tableView.rowHeight = 200
+        
+        let payButton = PKPaymentButton(paymentButtonType: .buy, paymentButtonStyle: .white)
+    
+        vStack.addArrangedSubview(payButton)
+        payButton.addTarget(self, action: #selector(pay), for: .touchUpInside)
+        
+    }
+    
+    @objc func pay() {
+        
+        let request = PKPaymentRequest()
+        request.merchantIdentifier = ".com.ahmadscompany"
+        request.paymentSummaryItems = [
+            PKPaymentSummaryItem(label: "skirt", amount: NSDecimalNumber(string: "100"))
+        ]
+        let paySheet = PKPaymentAuthorizationViewController(paymentRequest: request)!
+        present(paySheet, animated: true)
     }
     
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cart.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "checkoutItemCell", for: indexPath) as! CheckoutItemCell
         let model = (cart[indexPath.row],1)
         cell.model = model
@@ -45,6 +66,10 @@ class CheckoutItemCell: UITableViewCell {
             let qty = model?.1
             itemImageView.image = item?.image
             priceLabel.text = "\(item.map { $0.price * Double(qty ?? 0) } ?? 0)"
+            
+         //  AY trying to add the price from teh first name which is $110
+        // priceLabel.text= ""
+            
             nameLabel.text = item?.name ?? ""
             sizeLabel.text = item?.size.text ?? ""
             qtyLabel.text = "\(qty ?? 0)"
