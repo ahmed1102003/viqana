@@ -26,7 +26,6 @@ class CartBarButtonItem: UIBarButtonItem {
         
         // End of my adding AY the red is there but it's not circle
         let button = UIButton()
-        button.setImage(#imageLiteral(resourceName: "s2"), for: .normal)
         button.isHidden = true
         // imageView.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
         button.translatesAutoresizingMaskIntoConstraints = false

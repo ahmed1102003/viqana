@@ -8,6 +8,8 @@
 
 import UIKit
 
+var cart: [Item] = []
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

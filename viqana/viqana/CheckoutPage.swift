@@ -32,10 +32,15 @@ class CheckoutPage: UIViewController, UITableViewDataSource, UITableViewDelegate
     @objc func pay() {
         
         let request = PKPaymentRequest()
-        request.merchantIdentifier = ".com.ahmadscompany"
+        request.merchantIdentifier = ".com.viqana.viqana"
         request.paymentSummaryItems = [
             PKPaymentSummaryItem(label: "skirt", amount: NSDecimalNumber(string: "100"))
         ]
+        //AY Added as I saw it in the viedo
+        request.currencyCode = "zl"
+        request.countryCode = "PLN"
+        // end what AY Added
+        
         let paySheet = PKPaymentAuthorizationViewController(paymentRequest: request)!
         present(paySheet, animated: true)
     }
@@ -64,13 +69,10 @@ class CheckoutItemCell: UITableViewCell {
         didSet {
             let item = model?.0
             let qty = model?.1
-            itemImageView.image = item?.image
-            priceLabel.text = "\(item.map { $0.price * Double(qty ?? 0) } ?? 0)"
+            itemImageView.image = item?.product.image
+            priceLabel.text = "\(item.map { $0.product.price * Double(qty ?? 0) } ?? 0)"
             
-         //  AY trying to add the price from teh first name which is $110
-        // priceLabel.text= ""
-            
-            nameLabel.text = item?.name ?? ""
+            nameLabel.text = item?.product.name ?? ""
             sizeLabel.text = item?.size.text ?? ""
             qtyLabel.text = "\(qty ?? 0)"
         }

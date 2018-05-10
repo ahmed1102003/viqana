@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B709B1DE2072FE0400081FC5 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B709B1DC2072FE0400081FC5 /* ViewController1.swift */; };
+		B709B1DF2072FE0400081FC5 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B709B1DD2072FE0400081FC5 /* ViewController2.swift */; };
 		B70B16201FFBCB9B00D78443 /* CartBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70B161F1FFBCB9B00D78443 /* CartBarButtonItem.swift */; };
+		B71F2066206D101C00A6DE28 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71F2065206D101C00A6DE28 /* Product.swift */; };
+		B74FE31E20A4975600DD4A17 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74FE31D20A4975600DD4A17 /* Item.swift */; };
 		B760B5BA1F4F791F008C2D43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760B5B91F4F791F008C2D43 /* AppDelegate.swift */; };
-		B760B5BC1F4F791F008C2D43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760B5BB1F4F791F008C2D43 /* ViewController.swift */; };
+		B760B5BC1F4F791F008C2D43 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760B5BB1F4F791F008C2D43 /* HomeViewController.swift */; };
 		B760B5BF1F4F791F008C2D43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B760B5BD1F4F791F008C2D43 /* Main.storyboard */; };
 		B760B5C11F4F791F008C2D43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B760B5C01F4F791F008C2D43 /* Assets.xcassets */; };
 		B760B5C41F4F791F008C2D43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B760B5C21F4F791F008C2D43 /* LaunchScreen.storyboard */; };
-		B7772EE31F8EDC5C009220CD /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7772EDD1F8EDC5B009220CD /* ViewController2.swift */; };
-		B7772EE41F8EDC5C009220CD /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7772EDE1F8EDC5B009220CD /* ViewController1.swift */; };
 		B7772EE51F8EDC5C009220CD /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7772EDF1F8EDC5C009220CD /* ViewController4.swift */; };
 		B7772EE61F8EDC5C009220CD /* ViewController5Jacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7772EE01F8EDC5C009220CD /* ViewController5Jacket.swift */; };
 		B7772EE71F8EDC5C009220CD /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7772EE11F8EDC5C009220CD /* ViewController3.swift */; };
@@ -27,16 +29,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B709B1DC2072FE0400081FC5 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController1.swift; path = ../../../../../../.Trash/ViewController1.swift; sourceTree = "<group>"; };
+		B709B1DD2072FE0400081FC5 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController2.swift; path = ../../../../../../.Trash/ViewController2.swift; sourceTree = "<group>"; };
 		B70B161F1FFBCB9B00D78443 /* CartBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartBarButtonItem.swift; sourceTree = "<group>"; };
+		B71F2065206D101C00A6DE28 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Product.swift; path = viqana/Model/Product.swift; sourceTree = SOURCE_ROOT; };
+		B74FE31D20A4975600DD4A17 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Item.swift; path = viqana/Model/Item.swift; sourceTree = SOURCE_ROOT; };
 		B760B5B61F4F791F008C2D43 /* viqana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viqana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B760B5B91F4F791F008C2D43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B760B5BB1F4F791F008C2D43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B760B5BB1F4F791F008C2D43 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B760B5BE1F4F791F008C2D43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B760B5C01F4F791F008C2D43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B760B5C31F4F791F008C2D43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B760B5C51F4F791F008C2D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7772EDD1F8EDC5B009220CD /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController2.swift; path = viqana/View/ViewControllers/ViewController2.swift; sourceTree = SOURCE_ROOT; };
-		B7772EDE1F8EDC5B009220CD /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController1.swift; path = viqana/View/ViewControllers/ViewController1.swift; sourceTree = SOURCE_ROOT; };
 		B7772EDF1F8EDC5C009220CD /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController4.swift; path = viqana/View/ViewControllers/ViewController4.swift; sourceTree = SOURCE_ROOT; };
 		B7772EE01F8EDC5C009220CD /* ViewController5Jacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController5Jacket.swift; path = viqana/View/ViewControllers/ViewController5Jacket.swift; sourceTree = SOURCE_ROOT; };
 		B7772EE11F8EDC5C009220CD /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController3.swift; path = viqana/View/ViewControllers/ViewController3.swift; sourceTree = SOURCE_ROOT; };
@@ -81,7 +85,7 @@
 				B7772EDB1F8EDA18009220CD /* Model */,
 				B760B5CB1F591212008C2D43 /* View */,
 				B760B5B91F4F791F008C2D43 /* AppDelegate.swift */,
-				B760B5BB1F4F791F008C2D43 /* ViewController.swift */,
+				B760B5BB1F4F791F008C2D43 /* HomeViewController.swift */,
 				B760B5BD1F4F791F008C2D43 /* Main.storyboard */,
 				B77BBEED2001B52200835C02 /* CheckoutPage.swift */,
 				B760B5C01F4F791F008C2D43 /* Assets.xcassets */,
@@ -107,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				B7F853851FEFFB8D00B37EEE /* Size.swift */,
+				B71F2065206D101C00A6DE28 /* Product.swift */,
+				B74FE31D20A4975600DD4A17 /* Item.swift */,
 			);
 			name = Model;
 			path = Model2;
@@ -115,8 +121,8 @@
 		B7A9CB1E1FEFFABE0065B739 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				B7772EDE1F8EDC5B009220CD /* ViewController1.swift */,
-				B7772EDD1F8EDC5B009220CD /* ViewController2.swift */,
+				B709B1DC2072FE0400081FC5 /* ViewController1.swift */,
+				B709B1DD2072FE0400081FC5 /* ViewController2.swift */,
 				B7772EE11F8EDC5C009220CD /* ViewController3.swift */,
 				B7772EDF1F8EDC5C009220CD /* ViewController4.swift */,
 				B7772EE01F8EDC5C009220CD /* ViewController5Jacket.swift */,
@@ -198,18 +204,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				B70B16201FFBCB9B00D78443 /* CartBarButtonItem.swift in Sources */,
+				B709B1DE2072FE0400081FC5 /* ViewController1.swift in Sources */,
 				B7AA16251FBF40A100660897 /* SizeguideViewController.swift in Sources */,
-				B760B5BC1F4F791F008C2D43 /* ViewController.swift in Sources */,
+				B760B5BC1F4F791F008C2D43 /* HomeViewController.swift in Sources */,
 				B7F8538A1FEFFFE300B37EEE /* ErrorMessageView.swift in Sources */,
 				B7772EE51F8EDC5C009220CD /* ViewController4.swift in Sources */,
 				B7772EE71F8EDC5C009220CD /* ViewController3.swift in Sources */,
+				B709B1DF2072FE0400081FC5 /* ViewController2.swift in Sources */,
 				B7A5B39F1FC7390700DDB689 /* StyleGuideCell.swift in Sources */,
-				B7772EE41F8EDC5C009220CD /* ViewController1.swift in Sources */,
 				B7F853861FEFFB8D00B37EEE /* Size.swift in Sources */,
+				B74FE31E20A4975600DD4A17 /* Item.swift in Sources */,
 				B77BBEEE2001B52200835C02 /* CheckoutPage.swift in Sources */,
-				B7772EE31F8EDC5C009220CD /* ViewController2.swift in Sources */,
 				B760B5BA1F4F791F008C2D43 /* AppDelegate.swift in Sources */,
 				B7772EE61F8EDC5C009220CD /* ViewController5Jacket.swift in Sources */,
+				B71F2066206D101C00A6DE28 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

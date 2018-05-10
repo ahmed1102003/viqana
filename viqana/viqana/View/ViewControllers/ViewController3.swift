@@ -9,19 +9,25 @@
 import UIKit
 
 
-struct Item {
-    let image: UIImage
-    let size: Size
-    let name: String
-    let price: Double
-}
 
-var cart: [Item] = []
 
 
 class ViewController3: UIViewController {
 
-    
+    var productCategory: ProductCategory! {
+        didSet {
+            title = productCategory.name
+            button1.setBackgroundImage(productCategory.products[0].image, for: .normal)
+            title = productCategory.name
+            button2.setBackgroundImage(productCategory.products[0].image, for: .normal)
+            title = productCategory.name
+            button3.setBackgroundImage(productCategory.products[0].image, for: .normal)
+            title = productCategory.name
+            button4.setBackgroundImage(productCategory.products[0].image, for: .normal)
+           cartItem.button.setImage(productCategory.products[0].image, for: .normal)
+            
+        }
+    }
     
     var qty: Int = 1 {
         didSet {
@@ -132,6 +138,7 @@ class ViewController3: UIViewController {
         switch segue.identifier {
         case "vc3ToCheckout"?:
             guard let destination = segue.destination as? CheckoutPage else { assertionFailure(); return }
+            destination.model = (productCategory.products[0], qty)
             _ = destination.view
         default:
             break
@@ -247,7 +254,7 @@ class ViewController3: UIViewController {
         }
         animateItemToCart()
         let newItems = Array(0..<qty).map { _ in
-            Item(image: #imageLiteral(resourceName: "s1"), size: selectedSize, name: "skirt", price: 110.70 )
+            Item(product: productCategory.products[0], size: selectedSize)
         }
         cart = cart + newItems
         cartItem.count = numberOfItemsInCart
@@ -263,7 +270,7 @@ class ViewController3: UIViewController {
     weak var cartItem: CartBarButtonItem!
     func animateItemToCart() {
 //let itemView = UIImageView(image: #imageLiteral(resourceName: "Jacket"))
-       let itemView = UIImageView(image: #imageLiteral(resourceName: "s2"))
+       let itemView = UIImageView(image: productCategory.products[0].image)
         let size: CGFloat = 50
         itemView.clipsToBounds = true
         itemView.layer.cornerRadius = size/CGFloat(2)
